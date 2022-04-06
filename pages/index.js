@@ -3,7 +3,7 @@ import Card from "../components/card";
 
 export async function getStaticProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:3000/api/car-api`);
+  const res = await fetch(`/api/car-api`);
   const data = await res.json();
 
   // Pass data to the page via props
