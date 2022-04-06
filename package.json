@@ -4,9 +4,10 @@
   "description": "Next.js starter styled with Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
     "lint": "next lint"
   },
   "repository": {
